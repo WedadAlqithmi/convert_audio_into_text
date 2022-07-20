@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar"> 
+    <head>
+        <meta charset="UTF-8">
+        <title>convert your voice into a text </title>
+        <!-- here put the css code or a link -->
+    </head>
+    <style>
+        body{
+	font-family: arial;
+	font-size: 16px;
+	margin: 0;
+	background:linear-gradient(to right bottom, #f9568f, #031f6a);
+	color: #000;
+	
+	display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+        button{
+	    padding: 12px 20px;
+        background: #0ea4da;
+        border: 0;
+        color: #fff;
+        font-size: 18px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    </style>
+    <body>
+        <div class ="container"> 
+            <h1 class="text-center mt-5"> 
+                let's convert your voice into a text 
+            </h1>
+            <p id="insturction"> please press the button to start recording and convert your voice into a text </p>
+            <div class="form-group">
+                <button id="start-btn" class="button.btn.btn-danger btn-block">
+                    start 
+                </button>
+                    
+            </div>
+            <div class="form-group">
+                <textarea  id="textbox"  rows="6" class="form"></textarea> 
+            </div>
+        </div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"> </script>
+</html>
